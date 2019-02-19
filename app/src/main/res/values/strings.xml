@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Recipe Card</string>
+    <string name="kanji">鮨飯</string>
+    <string name="title">ikura \ngunkan</string>
+    <string name="subtitle">Battleship sushi with salmon roe</string>
+    <string name="below_subtitle">Oval shaped cooked vinegared rice wrapped in a
+                                    \nseaweed sheet  made with pickled salmon and topped
+                                    \nwith salmon caviar</string>
+    <string name="body">550 ml of Water
+                            \n\n75g of Cater Sugar
+                            \n\n100ml of Rice Wine Vinegar
+                            \n\n15g of Maldon Salt
+                            \n\n100g of Salmon Fillet
+                            \n\n4 Whole Nori Leaves
+                            \n\n10g of Wasabi
+                            \n\n5g of Salmon Keta
+                            \n\n1 Whole Cucumber</string>
+    <string name="footer">FOR MORE RECIPES VISIT WWW.AKASHINORI.COM</string>
 </resources>
