@@ -1,110 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/first_image"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        android:src="@drawable/first_image"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <ImageView
-        android:id="@+id/third_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="32dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="150dp"
-        android:maxHeight="150dp"
-        android:src="@drawable/third_image"
-        app:layout_constraintRight_toRightOf="@id/first_image"
-        app:layout_constraintTop_toTopOf="@id/first_image" />
-
-    <ImageView
-        android:id="@+id/second_image"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitEnd"
-        android:src="@drawable/second_image"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/kanji"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/kanji"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@id/third_image"
-        app:layout_constraintLeft_toLeftOf="@id/third_image"
-        app:layout_constraintRight_toRightOf="@id/third_image"
-        app:layout_constraintTop_toTopOf="@id/third_image" />
+        <ImageView
+            android:id="@+id/first_image"
+            android:layout_width="100dp"
+            android:layout_height="733dp"
+            android:contentDescription="@string/background_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/first_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="@string/title"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/third_image"
-        app:layout_constraintLeft_toRightOf="@id/third_image"
-        app:layout_constraintTop_toTopOf="@id/third_image" />
+        <ImageView
+            android:id="@+id/third_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/red_circle"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:src="@drawable/third_image"
+            app:layout_constraintLeft_toRightOf="@id/first_image"
+            app:layout_constraintRight_toRightOf="@id/first_image"
+            app:layout_constraintTop_toTopOf="@id/first_image" />
 
-    <TextView
-        android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/subtitle"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/kanji"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        <ImageView
+            android:id="@+id/second_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/red_circle"
+            android:scaleType="fitEnd"
+            android:src="@drawable/second_image"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-    <TextView
-        android:id="@+id/below_subtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/below_subtitle"
-        android:textColor="@android:color/black"
-        android:textSize="10sp"
-        android:textStyle="italic"
-        app:layout_constraintLeft_toLeftOf="@id/subtitle"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+        <TextView
+            android:id="@+id/kanji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kanji"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/third_image"
+            app:layout_constraintLeft_toLeftOf="@id/third_image"
+            app:layout_constraintRight_toRightOf="@id/third_image"
+            app:layout_constraintTop_toTopOf="@id/third_image" />
 
-    <TextView
-        android:id="@+id/body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/body"
-        android:textColor="@android:color/black"
-        android:textSize="11sp"
-        app:layout_constraintLeft_toLeftOf="@id/below_subtitle"
-        app:layout_constraintTop_toBottomOf="@id/below_subtitle" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/third_image"
+            app:layout_constraintLeft_toRightOf="@id/third_image"
+            app:layout_constraintTop_toTopOf="@id/third_image" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/footer"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="10sp"
-        app:layout_constraintLeft_toLeftOf="@id/body"
-        app:layout_constraintTop_toBottomOf="@id/body" />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/subtitle"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/kanji"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/below_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/below_subtitle"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="@id/subtitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/body"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/below_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/below_subtitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/footer"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/body"
+            app:layout_constraintTop_toBottomOf="@id/body" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
